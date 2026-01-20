@@ -7,6 +7,10 @@
  import ControllledInput from "./Input"
  import FormExample from "./Submit"
  import Todoform from "./TodoForm"
+ import {EffectExample, EffecExample2, Counter, Counter2} from "./EffectPractice"
+ import {LocalStorageCounter,LocalStorageCounter2} from "./localstorage"
+ 
+ 
 function App (){
   return <div>
     <h1>Components of React</h1>
@@ -23,6 +27,12 @@ function App (){
     <ControllledInput />
     <FormExample />
     <Todoform />
+    <EffectExample />
+    <EffecExample2 />
+    <Counter />
+    <Counter2 />
+    <LocalStorageCounter />
+    <LocalStorageCounter2 />
   </div>
    
   

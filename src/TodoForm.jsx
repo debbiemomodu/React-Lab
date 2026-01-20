@@ -36,28 +36,5 @@ function TodoForm() {
 
 export default TodoForm;
 
-function TodoForm() {
-   const [task, setTask] = useState("");
-   const [tasks , setTasks] = useState([])
-const handleSubmit = (e)=> { e.preventDefault();
-    if (task.trim() ==="") return;
-
-    setTasks([...tasks, task])
-    setTask("")
-}
-  return (
-    <div>
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={task} onChange={(e) => setTask(e.target.value)} placeholder="Enter task"/>
-            <button type="submit">Add</button>
-        </form>
-        <ul>
-        {tasks.map( (item, index) => (
-            <li key={index}>{item}</li>
-        ))}
-        </ul>
-    </div>
-  )
-}
 
 
